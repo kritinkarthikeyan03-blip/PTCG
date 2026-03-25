@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: ptcg-sim
+    env: node
+    plan: free
+    repo: https://github.com/kritinkarthikeyan03-blip/PTCG
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: GEMINI_API_KEY
+        value: "AIzaSyDxoovdNlyZVRiZlgulBQrwC55g2ArhssU"
