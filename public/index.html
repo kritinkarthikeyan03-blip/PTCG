@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PTCG Final</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+
+<h1>PTCG FINAL SIM</h1>
+<button onclick="findGame()">Find Match</button>
+
+<div id="game" style="display:none">
+  <h2>Opponent Active</h2>
+  <div id="oppActive"></div>
+
+  <h2>Your Active</h2>
+  <div id="active"></div>
+
+  <h2>Your Bench</h2>
+  <div id="bench"></div>
+
+  <h2>Your Hand</h2>
+  <div id="hand"></div>
+
+  <button onclick="attachEnergy()">Attach Energy</button>
+  <button onclick="attack()">Attack</button>
+
+  <pre id="log"></pre>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
